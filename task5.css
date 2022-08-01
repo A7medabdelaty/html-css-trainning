@@ -1,0 +1,161 @@
+.green,
+.blue,
+.black,
+.red {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.blue {
+  background-color: aqua;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.green {
+  background-color: darkcyan;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.red {
+  background-color: crimson;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+.black {
+  background-color: black;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 0;
+}
+
+.my-div {
+  width: 400px;
+  margin: 40px auto;
+  background-color: #eee;
+  border: 3px solid;
+  border-color: red blue;
+  padding: 20px;
+  line-height: 40px;
+  position: relative;
+}
+
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+  color: white;
+  background-color: blue;
+  text-align: center;
+  width: 35px;
+  line-height: 25px;
+}
+
+.top-left {
+  position: absolute;
+  left: -20px;
+  top: -15px;
+  border-right: 2px solid red;
+}
+
+.bottom-left {
+  position: absolute;
+  left: -20px;
+  bottom: -15px;
+  border-right: 2px solid red;
+}
+
+.top-right {
+  position: absolute;
+  right: -20px;
+  top: -15px;
+  border-left: 2px solid red;
+}
+
+.bottom-right {
+  position: absolute;
+  right: -20px;
+  bottom: -15px;
+  border-left: 2px solid red;
+}
+
+/** Third Task **/
+
+.root {
+  width: 400px;
+  margin: 15px auto;
+}
+
+li {
+  padding: 10px;
+}
+
+.f,
+.s,
+.th {
+  background-color: #eee;
+  list-style: none;
+}
+
+ul li {
+  background-color: white;
+  margin: 10px;
+}
+
+ul {
+  margin-left: -40px;
+  list-style-position: inside;
+}
+
+table {
+  width: 700px;
+  margin: auto;
+  border-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+th {
+  background-color: lightslategray;
+}
+
+td {
+  background-color: #eee;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.vi {
+  background-color: aqua;
+}
+
+.del {
+  background-color: lightcoral;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+thead tbody td,
+th {
+  padding: 5px;
+}
+
+tfoot tr td {
+  border-bottom: 2px solid #099a8c;
+}

@@ -1,0 +1,59 @@
+.task1 {
+  background-color: #eee;
+  width: 500px;
+  height: 120px;
+  line-height: 40px;
+  margin: 30px auto;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.task1:hover {
+  margin-top: 0;
+}
+
+.task1 div {
+  background-color: #8c8c8c;
+  width: calc((100% - 40px) / 1);
+  margin-left: 20px;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  height: 30px;
+  line-height: 30px;
+}
+
+.task1 div:hover {
+  margin-top: 20px;
+}
+
+.task2 {
+  width: 400px;
+  margin: auto;
+  font-size: 20px !important;
+  background-color: #eee !important;
+  border: none !important;
+  color: transparent !important;
+  position: relative;
+}
+
+.task2::before {
+  content: "elziro";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: black;
+  text-align: center;
+}
+
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+.task3 div {
+  width: 400px;
+  color: var(--mainColor, red);
+  padding: var(--mainPadding, 10px);
+  border: 2px solid var(--mainColor, black);
+  margin: 15px auto;
+}

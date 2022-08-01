@@ -1,0 +1,36 @@
+table {
+  background-image: url(imgs/bg2.jpg);
+  color: rgb(192, 12, 12);
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+tfoot {
+  text-align: left;
+  text-decoration: seagreen;
+}
+
+html {
+  background-image: url(imgs/bg1.jpg);
+  background-size: contain;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  margin: 30px;
+}
+
+#ta {
+  width: 100%;
+  height: 10px;
+}
+img {
+  width: 60px;
+  height: 60px;
+}
+
+hr {
+  display: none;
+}

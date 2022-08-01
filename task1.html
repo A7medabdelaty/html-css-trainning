@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 1</title>
+    <link rel="stylesheet" href="task1.css" />
+  </head>
+
+  <body>
+    <!--first table-->
+    <hr />
+    <h1>EX 1</h1>
+    <hr />
+    <table border="1px" width="50%">
+      <thead>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Team</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>j10001</td>
+          <td>jhon</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>j10001</td>
+          <td>peter</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>j10001</td>
+          <td>harry</td>
+          <td>red</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">foot of the table</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <h1>EX 2 nested</h1>
+    <hr />
+    <!--the secound table-->
+    <table width="50%" border="1px">
+      <thead>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>
+          <table border="1px" id="ta">
+            <!--the nested table-->
+            <thead>
+              <th>Roll no</th>
+              <th>Name</th>
+              <th>Team</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>j10001</td>
+                <td>jhon</td>
+                <td>red</td>
+              </tr>
+              <tr>
+                <td>j10001</td>
+                <td>peter</td>
+                <td>red</td>
+              </tr>
+              <tr>
+                <td>j10001</td>
+                <td>harry</td>
+                <td>red</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td colspan="3">foot of the table</td>
+            </tfoot>
+          </table>
+        </th>
+        <!--end of nested table-->
+      </thead>
+      <tbody>
+        <tr>
+          <td>j10001</td>
+          <td>jhon</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>j10001</td>
+          <td>peter</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>j10001</td>
+          <td>harry</td>
+          <td>red</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <!--end of secound table-->
+
+    <hr />
+    <h1>EX 3</h1>
+    <hr />
+    <!--the third table-->
+    <table border="1px" width="50%">
+      <thead>
+        <th rowspan="2">empono</th>
+        <th colspan="4">marks</th>
+        <tr>
+          <td>sec 1</td>
+          <td>sec 2</td>
+          <td>sec 3</td>
+          <td>sec 4</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <!--end of the third table-->
+
+    <hr />
+    <h1>EX 4</h1>
+    <hr />
+    <table width="50%" border="1px">
+      <thead>
+        <th>name</th>
+        <th>image</th>
+        <th>link</th>
+        <th>deitals</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>html</td>
+          <td><img src="imgs\html5.png" alt="html 5 img" /></td>
+          <td>
+            <a href="https://www.w3schools.com/html/" target="_blank">HTML 5</a>
+          </td>
+          <td>
+            <ul>
+              <li>concept</li>
+              <li>important</li>
+              <li>anything</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>css</td>
+          <td><img src="imgs\css3.png" alt="css 3 img" /></td>
+          <td>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"
+              >css 3</a
+            >
+          </td>
+          <td>
+            <ol>
+              <li>concept</li>
+              <li>important</li>
+              <li>anything</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td><img src="imgs\js.png" alt="javascript img" /></td>
+          <td>
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+              >JS</a
+            >
+          </td>
+          <td>
+            <ol type="A">
+              <li>concept</li>
+              <li>important</li>
+              <li>anything</li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+  </body>
+</html>

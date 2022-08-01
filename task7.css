@@ -1,0 +1,135 @@
+.one div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 0px 4px blue, -5px -5px 0px 4px red;
+  border-radius: 50%;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+}
+
+.one div {
+  counter-increment: my-counter;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  background-color: #eee;
+  position: relative;
+  border-radius: 50%;
+  margin: 20px;
+  float: left;
+  text-align: center;
+  line-height: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.one div::after {
+  content: counter(my-counter);
+  line-height: 25px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+  position: absolute;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: 35px;
+  top: -20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.two {
+  position: relative;
+  content: "";
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #eee;
+  border-radius: 0px 50px;
+  border-bottom-right-radius: 20px 10px;
+  border-top-left-radius: 20px 10px;
+  box-shadow: 2px 2px 5px 3px rgb(158, 158, 158) inset,
+    -2px -2px 5px 3px rgb(158, 158, 158) inset;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 550px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.parent .basic,
+.parent .pro {
+  background-color: #eee;
+  position: relative;
+  margin-left: 30px;
+  width: calc((100% - 90px) / 2);
+  height: 250px;
+  float: left;
+  padding: 10px;
+}
+
+.parent .basic span,
+.parent .pro span {
+  width: calc((100% - 30px) / 1);
+  float: left;
+  background-color: #4d91ff;
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.parent .basic div,
+.parent .pro div {
+  width: calc((100% - 60px) / 1);
+  margin-top: 90px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: #c5c5c5;
+  height: 130px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 50%;
+}
+
+.parent .basic::after {
+  content: "";
+  height: 250px;
+  width: 2px;
+  top: 0px;
+  left: 106.5%;
+  background-color: #4d91ff;
+  position: absolute;
+}
+
+.parent .basic::before {
+  content: "or";
+  text-transform: lowercase;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  background-color: #4d91ff;
+  border-radius: 50%;
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  z-index: 1;
+}

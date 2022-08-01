@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+div span {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+  line-height: 1;
+  position: relative;
+  z-index: -1;
+}
+
+div span::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  animation: move 3s linear infinite;
+  mix-blend-mode: difference;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: calc(100% - 50px);
+  }
+
+  100% {
+    left: 0;
+  }
+}

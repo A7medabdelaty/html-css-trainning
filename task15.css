@@ -1,0 +1,15 @@
+div.red.main{
+    color: red;
+}
+
+.child + .child{
+    color: red;
+}
+
+.parent+.parent :first-child.baby{
+    color: red;
+}
+
+html:nth-child(4), [title="Hello"], [title="HTML"]{
+    color: red;
+}

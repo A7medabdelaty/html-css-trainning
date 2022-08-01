@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+hr{
+    height: 5px;
+    background-image: linear-gradient(to right, red 30%, blue);
+}
+
+.elzero {
+  width: 600px;
+  height: 70px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #eee;
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.elzero::first-letter {
+  color: #f00000;
+}
+
+.elzero::before {
+  content: "";
+  height: 80px;
+  width: 610px;
+  top: -5px;
+  left: -5px;
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #f00000 0 20%,
+    #5252ff 20% 40%,
+    #52ff52 40% 60%,
+    #ff5454 60% 80%,
+    #a852ff 80% 100%
+  );
+  z-index: -1;
+}
+
+.two {
+  margin: 20px auto;
+  width: 600px;
+}
+
+.two div {
+  position: relative;
+  margin: auto;
+}
+
+.two input {
+  background-color: #eee;
+  width: 100%;
+  height: 70px;
+  margin: 15px auto;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  caret-color: red;
+}
+
+.two div::before {
+  content: "";
+  width: 600px;
+  height: 5px;
+  bottom: 10px;
+  background-image: linear-gradient(
+    to right,
+    #ff5454 50%,
+    #52ffff 50%
+  );
+  position: absolute;
+}
+
+.two div::selection {
+  text-decoration: none;
+}
+

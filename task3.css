@@ -1,0 +1,42 @@
+html {
+  font-size: 20px;
+}
+
+div {
+  border: 2px solid red;
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+p {
+  padding: inherit;
+  border: inherit;
+  background-color: #eee;
+}
+
+.f {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+.S {
+  font-family: "Cairo", sans-serif;
+}
+
+.t {
+  font-family: "Jomhuria", cursive;
+}
+
+.rm1 {
+  font-size: 2.25rem;
+}
+
+.rm2 {
+  font-size: 2rem;
+}
+
+.rm3 {
+  font-size: 1.5rem;
+}
